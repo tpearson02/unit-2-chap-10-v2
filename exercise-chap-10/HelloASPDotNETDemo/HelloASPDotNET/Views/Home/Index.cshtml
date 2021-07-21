@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!--
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+    -->
+<form method="post" action="/hello/welcome">
+    <input type="text" name="name" />
+    <label for="language">Choose a language:</label>
+    <select name="language" id="language">
+        <option value="Hello ">English</option>
+        <option value="Hola ">Spanish</option>
+        <option value="Ciao ">Italian</option>
+        <option value="Bonjour ">French</option>
+        <option value="Hallo ">Dutch</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
